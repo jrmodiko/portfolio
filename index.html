@@ -1,29 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
     <title>John-Ross Modiko - Portfolio</title>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-50">
      <!-- This is where the header content goes -->
      <!-- The nav with go inside of the header tag -->
+      <header class="bg-gray-800 text-white p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+          <div class="text-2xl font-bold">John-Ross Modiko</div>
+          <ul class="flex space-x-4">
+            <li><a href="#hero" class="hover:text-gray-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400 transition">About</a></li>
+            <li><a href="#skills" class="hover:text-gray-400 transition">Skills</a></li>
+            <li><a href="#projects" class="hover:text-gray-400 transition">Projects</a></li>
+            <li><a href="#education" class="hover:text-gray-400 transition">Education</a></li>
+            <li><a href="#contact" class="hover:text-gray-400 transition">Contact</a></li>
+          </ul>
+          <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition text-sm font-medium">Contact</a>
+        </nav>
+      </header>
     
      <!-- This is where the main content goes -->
       <!-- main content such as sections, articles, etc. -->
        
       <!--each section with its own id-->
-       
-        <!--sectiod id=hero-->
-         <!--section id=about-->   
+     
+      <main>
+        <!--section id=hero-->
+        <section id="hero" class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-10 rounded-lg">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                 <h1 class="text-4xl font-bold">John-Ross Modiko</h1>
+                    <p class="text-2xl mb-6">Aspiring Full-Stack Developer | ITPROG26 Student | Problem Solver</p>
+            </div>
+        </section>
+         <!--section id=about-->           
+        <section id="about" class="py-10 px-4 bg-gradient-to-b from-white to-gray-50">
+            <h2 class="text-4xl font-bold text-gray-900 mb-3 text-center">About Me</h2>
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed container text-center mx-auto shadow-xl rounded-lg p-4">I am John-Ross Modiko, an aspiring full-stack developer and ITPROG26 student with a passion for solving problems and creating innovative solutions.My journey in development has been driven by curiosity and a desire to continuously learn. I enjoy tackling complex challenges, collaborating with teams, and transforming ideas into functional, user-friendly web applications.</p>
+        </section>
          <!--section id=skills-->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS3/Tailwind CSS</li>
+                <li>Scratch (CS50 certified)</li>
+                <li>Git/GitHub</li>
+                <li>Problem-solving</li>
+            </ul>
             <!--section id=projects-->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+            </div>
+
               <!--section id=education-->
+        <section id="education">
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
                 <!--section id=contact-->
+        <section id="contact">
+            <h2>Get in touch</h2>
 
 
     <!-- This is where the footer content goes -->
      <!-- The footer tag will go here -->
+
+        <footer class="bg-gray-800 text-white p-4 mt-8">
+            <div class="container mx-auto text-center">
+            &copy; 2024 John-Ross Modiko. All rights reserved.
+            </div>
+        </footer>
+
+    </main>
 </body>
 </html>
+
+
+
+
+
+
+<section id="about" class="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <!-- Profile Image -->
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-2xl blur-lg opacity-75"></div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                                 alt="John-Ross Modiko" 
+                                 class="relative w-64 h-64 rounded-2xl object-cover shadow-2xl">
+                        </div>
+                    </div>
+                    <!-- About Content -->
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+                        <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                            I'm John-Ross Modiko, an aspiring full-stack developer with a passion for crafting elegant digital solutions. Currently studying in the ITPROG26 program, I combine technical expertise with creative problem-solving to build meaningful applications that make a difference.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            My journey in development has been driven by curiosity and a desire to continuously learn. I enjoy tackling complex challenges, collaborating with teams, and transforming ideas into functional, user-friendly web applications.
+                        </p>
+                        <!-- Stats -->
+                        <div class="grid grid-cols-3 gap-6 mb-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-indigo-600">5+</div>
+                                <p class="text-gray-600 text-sm">Projects Completed</p>
