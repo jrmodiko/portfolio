@@ -1,0 +1,141 @@
+Updated your index.html with cleaner layout, better visual hierarchy, improved spacing, better section cards, and consistent dark/light contrast.
+
+- fixed header styling (sticky, shadow)
+- better hero text + CTA
+- skill and project cards improved
+- adjusted body text color and background
+- added separators and hover effects
+- fixed HTML structure issues (`</section>` placements)
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>John-Ross Modiko - Portfolio</title>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="fixed inset-x-0 top-0 z-50 bg-gray-900/95 text-white backdrop-blur shadow-lg">
+        <nav class="container mx-auto flex items-center justify-between p-4">
+            <div class="text-2xl font-extrabold tracking-tight">John-Ross Modiko</div>
+            <ul class="hidden md:flex items-center gap-5 text-sm">
+                <li><a href="#hero" class="hover:text-orange-300 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-orange-300 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-orange-300 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-orange-300 transition">Projects</a></li>
+                <li><a href="#education" class="hover:text-orange-300 transition">Education</a></li>
+                <li><a href="#contact" class="hover:text-orange-300 transition">Contact</a></li>
+            </ul>
+            <a href="#contact"
+               class="ml-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white shadow hover:from-orange-400 hover:to-red-400">
+               Contact
+            </a>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <section id="hero" class="bg-gradient-to-r from-red-500 to-orange-400 text-white py-28">
+            <div class="container mx-auto text-center px-4">
+                <h1 class="text-5xl font-black md:text-6xl">John-Ross Modiko</h1>
+                <p class="mt-4 text-xl md:text-2xl">Aspiring Full-Stack Developer | ITPROG26 Student | Problem Solver</p>
+                <a href="#projects"
+                   class="mt-8 inline-block rounded-full bg-white/20 px-8 py-3 text-sm font-semibold uppercase tracking-wider text-white ring-1 ring-white/50 transition hover:bg-white hover:text-red-600 hover:ring-red-600">
+                   View Projects
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-14 bg-white">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-center text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+                <p class="text-center text-lg leading-relaxed text-gray-700 rounded-xl border border-gray-200 bg-gray-50 p-6 shadow-sm">
+                    I am John-Ross Modiko, an aspiring full-stack developer and ITPROG26 student with a passion for solving problems and creating innovative solutions. My journey in development has been driven by curiosity and a desire to continuously learn. I enjoy tackling complex challenges, collaborating with teams, and transforming ideas into functional, user-friendly web applications.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-14 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-center text-4xl font-bold text-gray-900 mb-10">Skills</h2>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <span class="rounded-2xl border border-gray-200 bg-white px-6 py-5 text-center font-semibold shadow-sm transition hover:shadow-lg">HTML</span>
+                    <span class="rounded-2xl border border-gray-200 bg-white px-6 py-5 text-center font-semibold shadow-sm transition hover:shadow-lg">CSS3 / Tailwind CSS</span>
+                    <span class="rounded-2xl border border-gray-200 bg-white px-6 py-5 text-center font-semibold shadow-sm transition hover:shadow-lg">Scratch (CS50 certified)</span>
+                    <span class="rounded-2xl border border-gray-200 bg-white px-6 py-5 text-center font-semibold shadow-sm transition hover:shadow-lg">Git / GitHub</span>
+                    <span class="rounded-2xl border border-gray-200 bg-white px-6 py-5 text-center font-semibold shadow-sm transition hover:shadow-lg">Problem-solving</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-14">
+            <div class="container mx-auto px-4">
+                <h2 class="text-center text-4xl font-bold text-gray-900 mb-10">Projects</h2>
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 1</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-orange-600 hover:underline">Learn More</a>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 2</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-orange-600 hover:underline">Learn More</a>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Project 3</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, labore!</p>
+                        <a href="#" class="inline-flex items-center gap-2 text-orange-600 hover:underline">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-14 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-center text-4xl font-bold text-gray-900 mb-8">Education</h2>
+                <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:shadow-lg">
+                    <h3 class="text-2xl font-semibold">ITPROG26 Program</h3>
+                    <p class="text-orange-600 font-medium mb-4">Full-Stack Development</p>
+                    <p class="text-gray-600">Institution: UniCollege</p>
+                    <p class="text-gray-600 mb-4">Duration: 2026 - Present</p>
+                    <p class="text-gray-700 leading-relaxed">Comprehensive program focusing on modern web development technologies, including front-end and back-end development, database management, and software engineering principles. Emphasizing hands-on projects and real-world problem-solving skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-14">
+            <div class="container mx-auto px-4 max-w-2xl">
+                <h2 class="text-center text-4xl font-bold text-gray-900 mb-8">Get in touch</h2>
+                <form class="space-y-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                        <input id="name" name="name" type="text" required
+                               class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input id="email" name="email" type="email" required
+                               class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"></textarea>
+                    </div>
+                    <button type="submit"
+                            class="w-full rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-4 py-3 font-semibold text-white transition hover:from-orange-400 hover:to-red-400">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200 py-5">
+        <div class="container mx-auto px-4 text-center text-sm">© 2024 John-Ross Modiko. All rights reserved.</div>
+    </footer>
+</body>
+</html>
+```
